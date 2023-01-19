@@ -8,9 +8,9 @@ def valid_login(username: str, password: str):
 
 @app.route("/")
 def index():
-    if 'login' in session and 'password' in session:
+    # if 'login' in session and 'password' in session:
         return render_template('index.html')
-    return render_template('login.html')
+    # return render_template('login.html')
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
